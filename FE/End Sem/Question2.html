@@ -1,0 +1,100 @@
+<!--
+ Daily Exercise Schedule: Design a table that displays a daily exercise routine, with rows for
+ each day of the week and columns for morning, afternoon, and evening activities. Use CSS to
+ add cell borders, alternate row colors, and style the headers to stand out.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Exercise Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4A90E2; /* Header background color */
+            color: white; /* Header text color */
+        }
+        tr:nth-child(even) {
+            background-color: #e9e9e9; /* Light gray for even rows */
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff; /* White for odd rows */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Daily Exercise Schedule</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Evening</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Jogging</td>
+                <td>Yoga</td>
+                <td>Weight Training</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Cycling</td>
+                <td>Swimming</td>
+                <td>Stretching</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>HIIT</td>
+                <td>Dance Class</td>
+                <td>Rest</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Running</td>
+                <td>Pilates</td>
+                <td>Cardio</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Walking</td>
+                <td>Boxing</td>
+                <td>Yoga</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Hiking</td>
+                <td>Group Sports</td>
+                <td>Rest</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Rest</td>
+                <td>Light Stretching</td>
+                <td>Family Walk</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
