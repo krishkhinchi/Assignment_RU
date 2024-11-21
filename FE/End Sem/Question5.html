@@ -1,0 +1,114 @@
+<!--
+Two-Column Layout for Resume: Create a basic resume page with a two-column layout using
+ CSS Flexbox or Grid. The left column should include sections for "Contact Information" and
+ "Skills," while the right column includes sections for "Experience" and "Education." Style each
+ section distinctly.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .left-column {
+            border-right: 2px solid #e0e0e0;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4A90E2;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background-color: #e9f5ff;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .experience, .education {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .job-dates {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="column left-column">
+            <div class="section">
+                <h2>Contact Information</h2>
+                <p>Name: Krish Khinchi</p>
+                <p>Email: krishhackz.in@outlook.com</p>
+                <p>Phone: 9876543221</p>
+                <p>LinkedIn: linkedin.com/in/krishkhinchi/</p>
+            </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column right-column">
+            <div class="section experience">
+                <h2>Experience</h2>
+                <div>
+                    <p class="job-title">Frontend Developer</p>
+                    <p class="job-dates">Jan 2020 - Present</p>
+                    <p>Company ABC - Developed user-friendly web applications using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div>
+                    <p class="job-title">Web Intern</p>
+                    <p class="job-dates">Jun 2019 - Dec 2019</p>
+                    <p>Company XYZ - Assisted in the development of web pages and learned best practices in web design.</p>
+                </div>
+            </div>
+            <div class="section education">
+                <h2>Education</h2>
+                <p>Bachelor of Science in Computer Science</p>
+                <p>Rai University, Graduated: May 2028</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
