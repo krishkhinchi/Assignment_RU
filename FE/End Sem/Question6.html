@@ -1,0 +1,88 @@
+<!--
+ Three-Section Personal Profile Page: Design a personal profile page with three sections:
+ "Biography," "Interests," and "Gallery" (displayed as image thumbnails). Style each section with
+ different background colors and add padding to space out the content.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; 
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .biography {
+            background-color: #e8f5e9; /* Light green */
+        }
+        .interests {
+            background-color: #ffe0b2; /* Light orange */
+        }
+        .gallery {
+            background-color: #bbdefb; /* Light blue */
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery-images img {
+            width: calc(33.333% - 10px); /* Three images in a row with gap */
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <section class="biography">
+            <h2>Biography</h2>
+            <p>Hello! I'm Krish Khinchi, a passionate web developer with a love for creating beautiful and functional websites. I have a background in computer science and have worked on various projects, ranging from small personal websites to large-scale applications.</p>
+        </section>
+
+        <section class="interests">
+            <h2>Interests</h2>
+            <p>In my free time, I enjoy exploring new technologies, hiking, photography, and traveling. I'm always eager to learn new skills and take on new challenges.</p>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="https://shorturl.at/qp3l3" alt="Image 1">
+                <img src="https://shorturl.at/qp3l3" alt="Image 2">
+                <img src="https://shorturl.at/qp3l3" alt="Image 3">
+                <img src="https://shorturl.at/qp3l3" alt="Image 4">
+                <img src="https://shorturl.at/qp3l3" alt="Image 5">
+                <img src="https://shorturl.at/qp3l3" alt="Image 6">
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
