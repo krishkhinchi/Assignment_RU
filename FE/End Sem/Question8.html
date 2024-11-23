@@ -1,0 +1,55 @@
+<!--
+Button Click to Display Message: Create a button that, when clicked, displays the message
+ "Hello, welcome to the page!" below the button. Use an onclick function in JavaScript to handle
+ this action.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height of the viewport */
+            background-color: #f0f0f0; /* Light background color */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4A90E2; /* Blue background color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357ABD; /* Darker blue on hover */
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="displayMessage()">Click Me!</button>
+    <div id="message"></div>
+
+    <script>
+        function displayMessage() {
+            document.getElementById('message').innerText = "Hello, welcome to the page!";
+        }
+    </script>
+
+</body>
+</html>
