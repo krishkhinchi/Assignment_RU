@@ -2,3 +2,33 @@
 Center a Div: Create a div with a width and height of 200px and a background color of your choice.
 Center this div both vertically and horizontally within the viewport using CSS.
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Div</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: #f0f0f0; /* Light background color */
+        }
+        .centered-div {
+            width: 200px;
+            height: 200px;
+            background-color: #4A90E2; /* Blue background color */
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered-div"></div>
+
+</body>
+</html>
