@@ -1,0 +1,51 @@
+<!--
+Create a clickable prototype that enables users to navigate seamlessly from the landing
+ page through login, product selection, cart, and checkout. Focus on ensuring the user flow is
+ smooth, intuitive, and easy to follow?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Color Change</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full height of the viewport */
+            background-color: #f0f0f0; /* Light background color */
+        }
+        p {
+            padding: 20px;
+            font-size: 18px;
+            border: 1px solid #ccc; /* Light border */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+
+    <p id="colorParagraph" 
+       onmouseover="changeColor(this)" 
+       onmouseout="resetColor(this)">
+       Hover over this text to change its background color!
+    </p>
+
+    <script>
+        function changeColor(element) {
+            element.style.backgroundColor = '#4A90E2'; // Change to blue
+            element.style.color = 'white'; // Change text color to white
+        }
+
+        function resetColor(element) {
+            element.style.backgroundColor = ''; // Reset to original
+            element.style.color = ''; // Reset text color to original
+        }
+    </script>
+
+</body>
+</html>
