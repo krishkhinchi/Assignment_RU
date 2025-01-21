@@ -8,4 +8,4 @@ function connectDB(){
         .catch((err)=>console.log("Connection error", err))
 }
 
-module.exports = connectDB;
+module.exports = connectDB
