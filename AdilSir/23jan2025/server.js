@@ -12,6 +12,7 @@ app.use(bodyParser.json())
 app.get('/', (req, res) => {
     res.send("HEllo")
 })
+
 app.post('/register', async (req, res) => {
     const { email, name, password } = req.body
 
@@ -79,6 +80,6 @@ app.put('/update/:id',async(req,res)=>{
     }
 })
 
-app.listen(4000, (req, res) => {
+app.listen(3000, (req, res) => {
     console.log("Server is running")
 })
