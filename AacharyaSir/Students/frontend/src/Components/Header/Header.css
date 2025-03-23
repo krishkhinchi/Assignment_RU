@@ -1,0 +1,23 @@
+#MainHeader{
+    background-color: rgb(238, 116, 116);
+    width: 1000px;
+    height: 50px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btn1InHeader{
+    background-color: rgb(238, 116, 116);
+    margin-left: 70px;
+    color: black;
+    font-size: large;
+    font-weight: 1000;
+}
+
+.btn2InHeader, .btn3InHeader{
+    background-color: rgb(238, 116, 116);
+    margin-left: 250px;
+    color: black;
+    font-size: large;
+    font-weight: 1000;
+}
